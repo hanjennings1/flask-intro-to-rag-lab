@@ -34,7 +34,7 @@ def create_app():
                 "sources": [],
             }), 200
         #. Build a structured prompt from the selected context:
-        prompt = build_prompt(query, context_matches)  # reuse the prompt builder
+        prompt = build_prompt(query, context_matches)                   # reuse the prompt builder
         #. Call generate_response(prompt):
         try:
             answer = generate_response(prompt)
